@@ -1,10 +1,21 @@
 /* CSS Reset */
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    background-color: #272727;
+}
+
 body {
     background-image: url('../images/1.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     font-family: 'Baloo Bhai', cursive;
     color: white;
     margin: 0px;
     padding: 0px;
+    height: 100vh;
 }
 
 .left {
@@ -87,21 +98,22 @@ body {
 
 .container {
     border: 2px solid white;
-    margin: 106px 80px;
-    padding: 75px;
+    margin: 10px 80px;
+    padding: 30px 20px;
     width:33vw;
     border-radius: 28px;
 }
 
 .form-group input {
     font-family: 'Baloo Bhai', cursive;
-    text-align: center;
+    /* text-align: center; */
     display: block;
-    padding: 1px;
+    padding: 10px;
     border: 2px solid black;
     margin: 11px auto;
-    font-size: 25px;
+    font-size: 20px;
     border-radius: 8px;
+    width: 95%;
 }
 
 .container h1 {
@@ -185,4 +197,120 @@ body {
 }
 .footer-container .footer-right  p{
     max-width: 500px;
+}
+
+
+h1 {
+
+    margin: 0px 0px 20px 0px;
+    padding: 0px;
+    text-align: center;
+    /* font-size: 10em; */
+    color: #fff;
+    text-transform: uppercase;
+    text-shadow: 0 5px 10px rgba(0, 0, 0, 1);
+    mix-blend-mode: overlay;
+    font-family: 'Roboto Slab', serif;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 1);
+    text-decoration: none;
+}
+
+.w3hubs-footer {
+    width: 100%;
+    height: auto;
+    margin: auto;
+    background: #272727;
+    padding: 20px 0px;
+}
+
+.w3hubs-nav ul {
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+}
+
+.w3hubs-nav ul li {
+    display: inline-block;
+    margin: 10px 20px;
+}
+
+.w3hubs-nav ul li a {
+    text-decoration: none;
+    outline: none;
+    font-family: 'Roboto Slab', serif;
+    font-size: 20px;
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.w3hubs-nav1 {
+    width: 100%;
+    height: auto;
+    margin: auto;
+    margin-top: 15px;
+}
+
+@media(max-width:691px) {
+
+    .w3hubs-nav1 ul li a,
+    .w3hubs-nav ul li a {
+        font-size: 16px;
+    }
+}
+
+@media(max-width:604px) {
+    .w3hubs-nav ul li a {
+        font-size: 14px;
+    }
+
+    .w3hubs-nav ul li {
+        padding: 0px;
+    }
+}
+
+@media(max-width:559px) {
+    .w3hubs-nav ul li a {
+        font-size: 13px;
+    }
+}
+
+@media(max-width:539px) {
+    .w3hubs-nav ul li a {
+        font-size: 11px;
+    }
+
+    .w3hubs-nav ul li {
+        margin: 5px 20px;
+    }
+
+    .w3hubs-nav ul li.p1 {
+        padding-top: 10px;
+    }
+}
+
+@media(max-width:380px) {
+    .w3hubs-nav ul li {
+        display: block;
+        padding: 5px;
+    }
+}
+
+/* styling for scrolling button */
+#topbtn {
+
+    position: fixed;
+    bottom: 20px;
+    right: 10px;
+    display: none;
+    z-index: 99;
+    cursor: pointer;
+    background-color: #34a853;
+    border-radius: 50%;
+}
+
+#topbtn:hover {
+    background-color: #346cf0;
+
 }
