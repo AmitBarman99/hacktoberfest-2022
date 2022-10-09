@@ -100,6 +100,7 @@ body {
     margin: 10px 80px;
     padding: 30px 20px;
     width:33vw;
+    min-width: 375px;
     border-radius: 28px;
 }
 
@@ -335,5 +336,10 @@ h1 {
     }
     .mid{
         width: 90%;
+    }
+}
+@media screen  and (max-width:530px){
+    .container{
+        margin: auto;
     }
 }
