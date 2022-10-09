@@ -341,5 +341,9 @@ h1 {
 @media screen  and (max-width:530px){
     .container{
         margin: auto;
+        margin-top: 30rem;
+    }
+    .footer-container{
+        flex-direction: column;
     }
 }
